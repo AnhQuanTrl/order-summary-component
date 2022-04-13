@@ -29,7 +29,7 @@
 
   /* Color (higher means darker) */
   --clr-primary-0: hsl(225, 100%, 94%);
-  --clr-primary-0-saturated: hsl(225, 60%, 94%);
+  --clr-primary-0-saturated: hsl(225, 60%, 50%, 0.25);
   --clr-primary-1: hsl(245, 75%, 52%);
   --clr-primary-1-hover: hsla(245, 75%, 52%, 0.7);
   --clr-primary-1-shadow: hsla(245, 75%, 52%, 0.25);

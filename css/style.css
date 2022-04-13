@@ -110,7 +110,7 @@
 .card {
   overflow: hidden;
   width: 25rem;
-  box-shadow: 0 0.4rem 0.8rem var(--clr-primary-0-saturated);
+  box-shadow: 0 0.3rem 0.6rem var(--clr-primary-0-saturated);
 }
 
 .card .icon-svg {
