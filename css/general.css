@@ -64,7 +64,6 @@ body {
   font-weight: var(--fw-normal);
   font-size: var(--fs-base);
   line-height: 1.5;
-  background-color: var(--clr-primary-0);
 }
 
 main {
@@ -72,6 +71,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--clr-primary-0);
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 h1 {
