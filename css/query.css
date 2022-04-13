@@ -1,0 +1,16 @@
+@media (max-width: 800px) {
+  :root {
+    font-size: 87.5%;
+    --ratio: 1.25;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 75%;
+  }
+
+  .card {
+    --measure: 30ch;
+  }
+}

@@ -108,8 +108,9 @@
 
 /* Block */
 .card {
+  --measure: 35ch;
   overflow: hidden;
-  width: 25rem;
+  /* width: 25rem; */
   box-shadow: 0 0.3rem 0.6rem var(--clr-primary-0-saturated);
 }
 
