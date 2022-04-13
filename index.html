@@ -11,39 +11,56 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
     <main>
-      <div class="order-summary">
-        <div class="order-img">
+      <article class="card bg-neutral-max br-lg">
+        <figure class="order-img">
           <img
             src="images/illustration-hero.svg"
             alt="A person vibing to music"
           />
+        </figure>
+        <div class="stack pd-s2 text-center">
+          <h1>Order Summary</h1>
+          <p class="text-neutral-1">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div class="cluster pd-s0 br-sm bg-neutral-0" data-align="center">
+            <img
+              src="images/icon-music.svg"
+              alt="Music icon"
+              class="icon-svg"
+            />
+            <div>
+              <p class="text-neutral-2 text-fw-bold">Annual Plan</p>
+              <p class="text-neutral-1">$59.99/year</p>
+            </div>
+            <button class="link text-fs-milli push-right">Change</button>
+          </div>
+          <div class="cta stack">
+            <button class="text-fs-milli button" data-type="primary">
+              Proceed to Payment
+            </button>
+            <button class="text-fs-milli button" data-type="flat">
+              Cancel Order
+            </button>
+          </div>
         </div>
-        <div class="order-title">Order Summary</div>
-        <div class="order-detail">
-          You can now listen to millions of songs, audiobooks, and podcasts on
-          any device anywhere you like!
-        </div>
-        <div class="order-price-box">
-          <img src="images/icon-music.svg" alt="Music icon" />
-          <div class="order-plan">Annual Plan</div>
-          <div class="order-price">$59.99/year</div>
-          <button>Change</button>
-        </div>
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
-      </div>
-      <aside>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
-        </div>
-      </aside>
+      </article>
     </main>
   </body>
 </html>

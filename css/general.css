@@ -1,0 +1,82 @@
+:root {
+  /* Modular scale */
+  --ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+
+  /* Measure */
+  --measure: 60ch;
+
+  /* Font size */
+  --fs-milli: 0.875rem;
+  --fs-base: 1rem;
+  --fs-h1: 1.5rem;
+
+  /* Font weight */
+  --fw-normal: 500;
+  --fw-bold: 700;
+  --fw-bolder: 900;
+
+  /* Color (higher means darker) */
+  --clr-primary-0: hsl(225, 100%, 94%);
+  --clr-primary-0-saturated: hsl(225, 60%, 94%);
+  --clr-primary-1: hsl(245, 75%, 52%);
+  --clr-primary-1-hover: hsla(245, 75%, 52%, 0.7);
+  --clr-primary-1-shadow: hsla(245, 75%, 52%, 0.25);
+
+  --clr-neutral-min: #000;
+  --clr-neutral-0: hsl(225, 100%, 98%);
+  --clr-neutral-1: hsl(224, 23%, 55%);
+  --clr-neutral-2: hsl(223, 47%, 23%);
+  --clr-neutral-max: #fff;
+
+  /* Border Radius */
+  --br-sm: 7px;
+  --br-lg: 11px;
+}
+
+* {
+  max-width: var(--measure);
+}
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer {
+  max-width: none;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-base);
+  line-height: 1.5;
+  background-color: var(--clr-primary-0);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+  line-height: 1.2;
+  font-weight: var(--fw-bolder);
+  color: var(--clr-neutral-2);
+}
